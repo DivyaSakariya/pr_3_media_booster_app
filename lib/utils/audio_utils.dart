@@ -26,11 +26,11 @@ List<Map<String, dynamic>> allAudiosList = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXOrcu-XS_6WuH2yMPpWPM6n8Jhhz0_obaww&usqp=CAU",
   },
   {
-    'audio': audioPath + AllAudios.bye,
-    'title': "Bye",
-    'artist': "Aditya Bhardwaj",
+    'audio': audioPath + AllAudios.aasmanKoChhukar,
+    'title': "Aasman Ko Chukar Dekha",
+    'artist': "Aleemrk",
     'image':
-        "https://c.saavncdn.com/527/Bye-Hindi-2022-20221219190021-500x500.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaiJ_H5j7GdX2gksxlhvKizHpL-E-TIDw0Pw&usqp=CAU",
   },
   {
     'audio': audioPath + AllAudios.bones,
@@ -45,6 +45,13 @@ List<Map<String, dynamic>> allAudiosList = [
     'artist': "Aleemrk, Umair",
     'image':
         "https://c.saavncdn.com/433/Cold-Hours-Urdu-2022-20220803004543-500x500.jpg",
+  },
+  {
+    'audio': audioPath + AllAudios.shapeOfYou,
+    'title': "Shape Of You",
+    'artist': "Ed Sheeran",
+    'image':
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdulnc1hxmzx9izhgHHRQGhssK6KshlS6bypOagn9_lVhJ6ntqiCFNislU1nOb7NjJeY&usqp=CAU",
   },
   {
     'audio': audioPath + AllAudios.cradles,
@@ -86,13 +93,6 @@ List<Map<String, dynamic>> allAudiosList = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStUPlXNZVh0N0LhsnvhPpiGMpDan3k7xIZ6A&usqp=CAU",
   },
   {
-    'audio': audioPath + AllAudios.shapeOfYou,
-    'title': "Shape Of You",
-    'artist': "Ed Sheeran",
-    'image':
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdulnc1hxmzx9izhgHHRQGhssK6KshlS6bypOagn9_lVhJ6ntqiCFNislU1nOb7NjJeY&usqp=CAU",
-  },
-  {
     'audio': audioPath + AllAudios.wellerman,
     'title': "Wellerman",
     'artist': "Nathon Evans",
@@ -107,10 +107,10 @@ List<Map<String, dynamic>> allAudiosList = [
         "https://www.pagalworld.us/_big/zindagi-ajey-nagar-carryminati-250.jpg",
   },
   {
-    'audio': audioPath + AllAudios.aasmanKoChhukar,
-    'title': "Aasman Ko Chukar Dekha",
-    'artist': "Aleemrk",
+    'audio': audioPath + AllAudios.bye,
+    'title': "Bye",
+    'artist': "Aditya Bhardwaj",
     'image':
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaiJ_H5j7GdX2gksxlhvKizHpL-E-TIDw0Pw&usqp=CAU",
+    "https://c.saavncdn.com/527/Bye-Hindi-2022-20221219190021-500x500.jpg",
   },
 ];

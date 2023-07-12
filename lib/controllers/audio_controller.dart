@@ -7,7 +7,7 @@ class AudioController extends ChangeNotifier {
   Duration totalDuration = Duration.zero;
   int currentAudioIndex = 0;
 
-  initialAudio({int index = 0}) {
+  initialAudio({int index = 0, bool audioStart = false}) {
     assetsAudioPlayer
         .open(
       Audio(
@@ -21,17 +21,19 @@ class AudioController extends ChangeNotifier {
           ),
         ),
       ),
-      autoStart: false,
+      autoStart: audioStart,
       showNotification: true,
     )
         .then((value) {
       totalDuration = assetsAudioPlayer.current.value!.audio.duration;
     });
+
+    notifyListeners();
   }
 
-  changeAudioIndex({required int index}) {
+  changeAudioIndex({required int index, required bool audioStart}) {
     assetsAudioPlayer.pause();
-    initialAudio(index: index);
+    initialAudio(index: index, audioStart: audioStart);
     currentAudioIndex = index;
     notifyListeners();
   }

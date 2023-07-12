@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pr_3_media_booster/controllers/audio_controller.dart';
+import 'package:pr_3_media_booster/controllers/carousel_slider_controller.dart';
 import 'package:pr_3_media_booster/controllers/video_controller.dart';
 import 'package:pr_3_media_booster/views/screens/audio_player/song_detail_page.dart';
 import 'package:pr_3_media_booster/views/screens/home_page.dart';
@@ -14,6 +15,9 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (context) => VideoController(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => CarouselSliderController(),
         ),
       ],
       child: const MyApp(),

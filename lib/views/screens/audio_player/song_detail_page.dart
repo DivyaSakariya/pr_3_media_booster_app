@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pr_3_media_booster/controllers/audio_controller.dart';
 import 'package:pr_3_media_booster/utils/audio_utils.dart';
 import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
 
 class SongDetailPage extends StatefulWidget {
   const SongDetailPage({super.key});
@@ -30,7 +31,19 @@ class _SongDetailPageState extends State<SongDetailPage>
         appBar: AppBar(
           title: Text(
               "${allAudiosList[provider.currentAudioIndex]['title']} Playing"),
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.transparent,
+          actions: [
+            Consumer<AudioController>(
+              builder: (context, provider, child) => IconButton(
+                onPressed: () async {
+                  await Share.share(
+                    "${allAudiosList[provider.currentAudioIndex]['audio']}\n${allAudiosList[provider.currentAudioIndex]['title']}\n${allAudiosList[provider.currentAudioIndex]['artist']}",
+                  );
+                },
+                icon: const Icon(Icons.share),
+              ),
+            ),
+          ],
         ),
         body: Stack(
           children: [
@@ -98,8 +111,12 @@ class _SongDetailPageState extends State<SongDetailPage>
                                   onChanged: (value) {
                                     provider.seek(sec: value.toInt());
                                   },
+                                  thumbColor: provider.isPlaying
+                                      ? Colors.transparent
+                                      : Colors.green,
                                 ),
                               ),
+                              const SizedBox(height: 3),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -127,7 +144,8 @@ class _SongDetailPageState extends State<SongDetailPage>
                                       onPressed: () {
                                         provider.changeAudioIndex(
                                             index:
-                                                provider.currentAudioIndex - 1);
+                                                provider.currentAudioIndex - 1,
+                                            audioStart: true);
                                         provider.skipPrevious();
                                       },
                                       icon: const Icon(
@@ -167,7 +185,8 @@ class _SongDetailPageState extends State<SongDetailPage>
                                       onPressed: () {
                                         provider.changeAudioIndex(
                                             index:
-                                                provider.currentAudioIndex + 1);
+                                                provider.currentAudioIndex + 1,
+                                            audioStart: true);
                                         provider.skipNext();
                                       },
                                       icon: const Icon(

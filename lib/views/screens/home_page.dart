@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pr_3_media_booster/views/screens/audio_player/song_detail_page.dart';
 import 'package:pr_3_media_booster/views/screens/video_player/video_page.dart';
 
 import 'audio_player/song_home_page.dart';

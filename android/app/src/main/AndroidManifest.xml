@@ -1,6 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
-        android:label="pr_3_media_booster_app"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pr3_media_booster_app">
+   <application
+        android:label="pr3_media_booster_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

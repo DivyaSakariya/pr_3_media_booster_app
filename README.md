@@ -1,4 +1,4 @@
-# pr_3_media_booster
+# pr_3_media_booster_app
 
 **Project Description:**
 -The aim of this project is to develop a media player application using the Flutter framework that

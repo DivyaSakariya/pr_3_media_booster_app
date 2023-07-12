@@ -41,3 +41,12 @@ player page.
 - User satisfaction with the application’s functionality and UI/UX
 - Quality of code and project structure
 - Presentation quality and clarity of communication
+
+## Video
+
+## ScreenShots
+
+<img src="https://github.com/DivyaSakariya/pr_3_media_booster_app/assets/113959976/1409d074-487b-4e49-95d5-4543fbcb1657"  width="250px"></img>
+<img src="https://github.com/DivyaSakariya/pr_3_media_booster_app/assets/113959976/3d4cb326-6272-4275-b4db-e1f7ed6650fb"  width="250px"></img>
+<img src="https://github.com/DivyaSakariya/pr_3_media_booster_app/assets/113959976/29ad6ddf-2002-483d-88b0-ca2bf4686929"  width="250px"></img>
+

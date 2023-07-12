@@ -30,6 +30,9 @@ class _HomePageState extends State<HomePage>
       body: NestedScrollView(
         headerSliverBuilder: (context, value) => [
           SliverAppBar(
+            pinned: true,
+            snap: true,
+            floating: true,
             title: const Text("Media Booster"),
             bottom: TabBar(
               controller: tabController,
@@ -47,7 +50,6 @@ class _HomePageState extends State<HomePage>
         body: TabBarView(
           controller: tabController,
           children: const [
-            // SongPage(),
             SongHomePage(),
             VideoPage(),
           ],

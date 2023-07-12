@@ -44,6 +44,11 @@ player page.
 
 ## Video
 
+
+https://github.com/DivyaSakariya/pr_3_media_booster_app/assets/113959976/9dc9639e-07cd-4865-b941-cdc7a98e8ae7
+
+
+
 ## ScreenShots
 
 <img src="https://github.com/DivyaSakariya/pr_3_media_booster_app/assets/113959976/1409d074-487b-4e49-95d5-4543fbcb1657"  width="250px"></img>

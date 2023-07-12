@@ -18,7 +18,7 @@ class VideoPage extends StatelessWidget {
             ? Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   Consumer<CarouselSliderController>(
                     builder: (context, cProvider, child) => Column(
                       children: [
@@ -69,6 +69,7 @@ class VideoPage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(height: 10),
                   AspectRatio(
                     aspectRatio:
                         provider.videoPlayerController.value.aspectRatio,
@@ -76,13 +77,13 @@ class VideoPage extends StatelessWidget {
                       controller: provider.chewieController,
                     ),
                   ),
-                  const SizedBox(height: 15),
+                  const SizedBox(height: 10),
                   const Text(
                     "Videos",
                     style: TextStyle(fontSize: 16),
                   ),
                   SizedBox(
-                    height: 200,
+                    height: 150,
                     child: ListView.builder(
                       itemCount: allVideos.length,
                       itemBuilder: (context, index) => Card(
